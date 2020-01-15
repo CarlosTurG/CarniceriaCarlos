@@ -1,0 +1,213 @@
+/*GENERALES*/
+body {
+    text-align: center;
+}
+img {
+    width: 100%;
+    max-width: max-content;
+}
+section {
+    padding: 20px;
+}
+li{
+    list-style: none;
+    display: inline;
+}
+
+
+/*HEADER*/
+header {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    background-image: url(../img/superior.jpg);
+}
+
+/*Barra de navegación responsive*/
+nav{
+    max-width: 100%;
+    max-height: 50px;
+    position: relative;
+    top: -50px;
+}
+.boton {
+	margin: 0 auto;
+	display: block;
+	width: 40px;
+	height: 36px;
+	padding: 10px;
+	border-radius: 7px;
+	background: rgba(0, 0, 0, 0.644);
+	color: white;
+	cursor: pointer;
+	position: relative;
+}
+
+.boton span {
+	display: block;
+	width: 40px;
+	height: 4px;
+	background: white;
+	margin-top:7px;
+}
+
+label {
+  cursor: pointer;
+}
+
+#menu-toggle {
+  display: none; /* hide the checkbox */
+}
+
+#menu {
+  display: none;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.644);
+  padding:10px;
+}
+
+#menu li a {
+	color: white;
+	padding: 10px 0;
+	display: block;
+}
+
+#menu-toggle:checked + #menu {
+  display: block;
+}
+
+/*MAIN*/
+main {
+    margin-top: -50px;
+    background-color: white;
+    margin-bottom: -50px;/*EL COLOR GRIS DEBE MANTENERSE ENCIMA DEL FOOTER*/
+    position: relative;
+    z-index: 100;
+}
+
+.RRSS ul li {
+    margin-right: 10%;
+}
+
+/*FORMULARIO*/
+.form{ 
+    text-align: left;
+    background-color: gray;
+}
+.form div{
+   margin-top: 20px;
+   margin-left: 10%;
+   font-weight: bold;
+}
+
+input, textarea{
+    margin-top: 10px;
+    padding: 8px;
+    resize: none;
+}
+input[placeholder], textarea[placeholder] {
+    width: 85%;
+}
+#submit{/*EL BOTÓN DE ENVIAR SE HA QUEDADO DEMASIADO APARTADO y va a la derecha*/
+    color: white;
+    background-color: black;
+    border-color: white;
+    margin-top: -35px;
+}
+
+/*FOOTER*/
+footer{
+    padding-top: 100px;
+    padding-bottom: 25px;
+    width: 100%;
+    background-image: url(../img/inferior.jpg);
+    z-index: 8;
+}
+.faxEmail {
+    overflow: hidden;
+}
+.final {
+    padding: 1px;
+    background-color: black;
+    color: white;
+}
+
+
+
+
+/* .  TAMAÑOS MEDIANOS . */
+@media screen and (min-width: 800px) {
+    main {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+   section {
+       clear: left;
+   }
+   section.info {
+        padding-left: 4%;
+   }
+    article {
+            float: left;
+            width: 42%;
+            margin-right: 40px;
+            
+    }
+}
+
+
+
+/* .  TAMAÑOS GRANDES . */
+@media screen and (min-width: 1200px) {
+    /*General*/
+    p {
+        font-size: 1.1rem;
+    }
+
+    section {
+        clear: left;
+    }
+
+    article {
+            float: left;
+            width: calc(25% - 40px);
+            max-width: 1600px;
+            margin-right: 40px;
+        }
+
+    /*Menú/Nav*/
+        label{
+            display: none;
+        }
+
+        #menu{
+            display: inline-block;
+            width: 100%;
+        }
+        li{
+            display: inline-block;
+            margin-right: 20%;
+        }
+        li:last-child {
+            margin-right: 0%;
+        }
+       
+    /*Main*/
+    main {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    /*Formulario*/
+    .form div{
+        width: 25%;
+        margin-left: 17%;
+        display: inline-block;
+    }
+
+    label, input, textarea{
+        float: left;
+    }
+
+    /*EL BOTÓN DE ENVIAR DEBERÍA ESTAR DEBAJO DEL MANSAJE EN TAMAÑOS GRANDES Y MEDIANOS*/
+}

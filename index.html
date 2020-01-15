@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejemplo Responsive Carniceria</title>
+
+    <link rel="stylesheet" type="text/css" href="estilo/style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+</head>
+
+
+
+
+
+<body>
+
+    <header>
+
+        <nav>   <!--Webgrafía para menú responsive: https://www.codigonexo.com/blog/programacion/html-css/checkbox-para-crear-un-menu-responsive-sin-javascript/-->
+            <label for="menu-toggle">
+                <div class="boton">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </label>
+                <input type="checkbox" id="menu-toggle"/>
+                <ul id="menu">
+                  <li><a href="#">Inicio</a></li>
+                  <li><a href="#">Servicios</a></li>
+                  <li><a href="#">Productos</a></li>
+                  <li><a href="#">Tiendas</a></li>
+                </ul>
+        </nav>
+
+
+    </header>
+
+
+    <main>
+        <section>
+
+            <h2>PRESENTACIÓN</h2>
+
+            <p>En Carnicerías ACME ponemos a su disposición las mejores carnes, embutidos y platos preparados, entre otras delicias gourmet. Si tienen un evento y quieren deleitar a sus invitados con unos productos sanos, frescos y sabrosos, contacten con nosotros.
+            </p>
+            
+
+            <h2>Reparto a domicilio</h2>
+
+            <p>Realicen su pedido hoy mismo y mañana lo tendrán listo en su domicilio.</p>
+
+            
+
+            <h2>Corte tradicional</h2>
+
+            <p> No tenemos bandejas preparadas. Nuestro corte es artesano y profesional.</p>
+
+        </section>
+
+        <section class="info">
+
+           <article class="calidad">
+               <h3>Calidad</h3>
+               <div>
+                   <img src="img/carne.jpg" alt="">
+               </div>
+               <p>Carne de calidad de los valles pirenáicos. Con las mejores garantías de sanidad y sabor.</p> 
+           </article> 
+
+            <article class="servicio">
+                <h3>Servicio 24h</h3>
+                <div>
+                    <img src="img/entrega.jpg" alt="">
+                </div>
+                <p>En nuestro transporte refigerado garantizamos que cumpliremos en 24h con nuestros compromisos.</p>
+            </article>
+            
+            <article class="restauracion">
+               <h3>Restauración</h3> 
+               <div>
+                   <img src="img/restaurantes.jpg" alt="">
+               </div>
+               <p> Servimos a los mejores restaurantes de Zaragoza. Si regentas un local de restauración llámanos.</p>
+            </article>
+            
+            <article class="charcuteria">
+                <h3>Charcutería</h3>
+                <div>
+                    <img src="img/charcuteria.jpg" alt="">
+                </div>
+                <p> Los mejores ejemplares de jamón ibérico y embutidos tradicionales. Especialistas en charcutería.</p>
+            </article>
+
+        </section>
+
+        <section class="RRSS">
+            <ul>
+                <li><i class='fab fa-facebook' style='font-size:36px'></i></li>
+                <li><i class='fab fa-google-plus' style='font-size:36px'></i></li>
+                <li><i class='fas fa-map-marker-alt' style='font-size:36px'></i></li>
+            </ul>
+        </section>
+        
+        <section class="form">
+            <form action="">
+                <div>
+                    <label for="email">Email:</label> <br>
+                    <input id="email" name="email" type="email" placeholder="ejemplo@email.com">
+                </div>
+                
+                <div>
+                    <label for="tlf">Teléfono:</label> <br>
+                    <input id="Teléfono" name="tlf" type="number" placeholder=" 666 999 666">
+                </div>
+
+                <div>
+                    <label for="mensaje">Mensaje:</label> <br>
+                    <textarea id="mensaje" name="mensaje" placeholder="Escriba aquí el mensaje"></textarea>
+                </div>
+                
+                <div> <br>
+                    <input id="submit" name="submit" type="submit" value="Enviar">
+                </div>
+            </form>
+        </section>
+    </main>
+
+        <footer>
+            
+        </footer>
+
+        <section class="final">
+                <p> Calle Bomba, 16. 50010 Saratoga. tlf: 666 999 666. <span class="faxEmail">Fax: 599 666 999. Email: carniceria@gmail.com</span></p>
+        </section>
+        
+
+    
+
+</body>
+</html>
